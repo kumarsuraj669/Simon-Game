@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(20, 19, 80);
+}
+#header{
+    text-align: center;
+    margin: 10vh;
+    font-size: 4rem;
+    color: rgb(255, 255, 207);
+    font-family:  monospace;    
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.box-item{
+    width: 240px;
+    height: 240px;
+    margin: 8px;
+    border: 10px solid black;
+    border-radius: 40px;
+}
+@media (max-width: 750px){
+    .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-item{
+        width:30vw;
+        height:30vw;
+        border: 8px solid black;
+    }
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.box-effect{
+    background-color: rgb(59, 55, 55);
+    box-shadow: 0 0 20px white;
+}
+.game-over{
+    background-color: red;
+}
