@@ -1,6 +1,4 @@
-// document.addEventListener("keypress", newMove);
-// document.addEventListener("click", newMove);
-window.onload = alert("hello");
+document.addEventListener("keypress", newMove);
 var level = 0;
 var box = document.querySelectorAll(".box-item");
 var header = document.querySelector("#header");
@@ -10,8 +8,7 @@ var userMoves = [];
 
 box.forEach(element => element.addEventListener("click", handleUserClick));
 
-function newMove(){
-	document.removeEventListener("click", newmove);
+function newMove () {
     document.removeEventListener("keypress", newMove);
     userMoves = [];
 
