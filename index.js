@@ -1,5 +1,7 @@
 // document.addEventListener("keypress", newMove);
-document.onload = setTimeout(newMove, 2000);
+window.onload = setTimeout(()=>{
+    alert("HEllo");
+    newMove}, 2000);
 var level = 0;
 var box = document.querySelectorAll(".box-item");
 var header = document.querySelector("#header");
