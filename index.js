@@ -1,6 +1,6 @@
 // document.addEventListener("keypress", newMove);
 // document.addEventListener("click", newMove);
-window.onload = setTimeout(newMove, 2000);
+window.onload = alert("hello");
 var level = 0;
 var box = document.querySelectorAll(".box-item");
 var header = document.querySelector("#header");
