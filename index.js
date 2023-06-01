@@ -1,4 +1,5 @@
-document.addEventListener("keypress", newMove);
+// document.addEventListener("keypress", newMove);
+document.onload = setTimeout(newMove, 2000);
 var level = 0;
 var box = document.querySelectorAll(".box-item");
 var header = document.querySelector("#header");
@@ -9,7 +10,7 @@ var userMoves = [];
 box.forEach(element => element.addEventListener("click", handleUserClick));
 
 function newMove () {
-    document.removeEventListener("keypress", newMove);
+//     document.removeEventListener("keypress", newMove);
     userMoves = [];
 
     let random = Math.floor(Math.random()*4);
